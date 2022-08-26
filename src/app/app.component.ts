@@ -17,6 +17,11 @@ export class AppComponent {
     this.menuVariable =! this.menuVariable;
     this.menu_icon_variable =! this.menu_icon_variable;
   }
+
+  closeMenu() {
+    this.menuVariable =! this.menuVariable;
+    this.menu_icon_variable =! this.menu_icon_variable;
+  }
 }
 
 

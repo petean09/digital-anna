@@ -1,3 +1,4 @@
+/* Navbar styles */
 header{
     padding:12px 0;
     background-color:  black;
@@ -91,3 +92,5 @@ header{
   transition: 0.4s ease-in-out;
   }
 }
+
+/* End navbar styles */
