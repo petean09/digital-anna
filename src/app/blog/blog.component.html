@@ -1,1 +1,13 @@
-<p>blog works!</p>
+<!-- Used to display the obsevable (blogPosts$) of the blog posts coming from blog component -->
+<main *ngIf="blogPosts$ | async as blogPosts">
+    <!-- the pre tag formats the json nicely -->
+    <!-- <pre>
+        {{ blogPosts | json }}
+    </pre> -->
+
+    <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
+        <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+        <h2> {{ blogPost.fields.title }} </h2>
+        <p> {{ blogPost.fields.category }} </p>
+    </div>
+</main>
