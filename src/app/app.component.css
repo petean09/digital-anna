@@ -94,3 +94,39 @@ header{
 }
 
 /* End navbar styles */
+
+/* Footer styles */
+
+.footerContainer{
+  background-color: black;
+  color: white;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.contactMenu {
+  flex-direction: row;
+}
+
+.social-icon-container {
+  padding: 10px;
+  list-style: none;
+  color: white;
+}
+
+.social-icon-container.grow {
+  transition: all .2s ease-in-out;
+}
+.social-icon-container:hover {
+  transform: scale(1.5);
+}
+
+.social-icon{
+  color: white;
+}
+
+
+.copyright{
+  text-align: right;
+}
+

@@ -5,16 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
-import { ConnectModalComponent } from './connect-modal/connect-modal.component';
 import { HomeComponent } from './home/home.component';
+import { DoodlesComponent } from './doodles/doodles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     BlogComponent,
-    ConnectModalComponent,
-    HomeComponent
+    HomeComponent,
+    DoodlesComponent
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,7 @@
           <ul>
             <li><a routerLink="/about" (click)="closeMenu()">About</a></li>
             <li><a routerLink="/blog" (click)="closeMenu()">Blog</a></li>
-            <li><a routerLink="/connect" (click)="closeMenu()">Connect</a></li>
+            <li><a routerLink="/doodles" (click)="closeMenu()">Doodles</a></li>
           </ul>
         </div>
       </div>
@@ -26,3 +26,45 @@
 </header>
 
 <router-outlet></router-outlet>
+
+<footer class="footerContainer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+
+        <!-- icons -->
+              <ul class="contactMenu nav navbar-nav ml-auto">
+              <li class="nav-item social-icon-container">
+                  <!-- <a class="email" (click)="email()"> -->
+                  <a class="social-icon">
+                    <i class="fas fa-envelope fa-2xl"></i>
+                  </a>
+              </li>
+              <li class="nav-item social-icon-container">
+                  <a class="social-icon" href="https://github.com/petean09/Sample-Work">
+                      <i class="fa-brands fa-github fa-2xl"></i>
+                  </a>
+              </li>
+              <li class="nav-item social-icon-container">
+                  <a class="social-icon" href="https://www.linkedin.com/in/anna-g-peterson/">
+                      <i class="fab fa-linkedin-in fa-2xl"></i>
+                  </a>
+              </li>
+              <li class="nav-item social-icon-container">
+                  <a class="social-icon" href="https://www.instagram.com/anna_peterson3/">
+                      <i class="fab fa-instagram fa-2xl"></i>
+                  </a>
+              </li>
+          </ul>
+
+
+      </div>
+
+      <div class="col-xs-6 copyright-container">
+        <p class="copyright">&copy; Anna Peterson 2022</p>
+      </div>
+
+
+    </div>
+  </div>
+</footer>

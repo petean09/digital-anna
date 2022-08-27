@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConnectModalComponent } from './connect-modal.component';
+import { DoodlesComponent } from './doodles.component';
 
-describe('ConnectModalComponent', () => {
-  let component: ConnectModalComponent;
-  let fixture: ComponentFixture<ConnectModalComponent>;
+describe('DoodlesComponent', () => {
+  let component: DoodlesComponent;
+  let fixture: ComponentFixture<DoodlesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ConnectModalComponent ]
+      declarations: [ DoodlesComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ConnectModalComponent);
+    fixture = TestBed.createComponent(DoodlesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
