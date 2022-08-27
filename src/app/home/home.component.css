@@ -17,6 +17,20 @@
     font-size: 1em;
 }
 
+.personal-image-container { 
+    padding-top: 6em;
+    
+} 
+
+.headshot-img { 
+    object-fit: cover;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 
 /* Select creation section */
