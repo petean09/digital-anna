@@ -1,0 +1,27 @@
+.aboutContainer{
+    background-color: black;
+    color: white;
+    padding-top: 4rem;
+}
+
+.about-title{
+    font-size: 20vw;
+    justify-content: center;
+    display: flex;
+    font-family: 'Domaine-Display-SemiBold';
+}
+
+.about-subtitle {
+    padding-left: 10em;
+    padding-right: 10em;
+    color: #9c9998;
+    padding-top: 4rem;
+}
+
+@media (max-width: 576px) { 
+    .about-subtitle{
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1.8em;
+    }
+ }

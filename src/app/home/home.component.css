@@ -1,0 +1,204 @@
+.homeContainer{
+    background-color: black;
+    color: white;
+    padding-top: 6rem;
+}
+
+.landing-title{
+    font-size: 7.5vw;
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.2em;
+}
+
+.landing-personal-description {
+    padding-top: 6rem;
+    line-height: 1.8em;
+    color: #9c9998;
+    font-size: 1em;
+}
+
+
+
+/* Select creation section */
+.creation-title{
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+  
+  
+.bounce {
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+  transform: translateY(0);
+  }
+  40% {
+  transform: translateY(-20px);
+  }
+  60% {
+  transform: translateY(-12px);
+  }
+  }
+  
+   /* fade siblings  */
+   .sibling-fade { visibility: hidden; }
+   /* Prevents :hover from triggering in the gaps between items */
+   
+   .sibling-fade > * { visibility: visible; }
+   /* Brings the child items back in, even though the parent is `hidden` */
+   
+   .sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+   /* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+   
+   .sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+   /* Fade out all items when the parent is hovered */
+  
+   .sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms;}
+   /* Fade in the currently hovered item */
+  
+  /* strike through */
+  a:before, a:after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      top: 50%;
+      /* margin-top: -0.5px; */
+      background: #fff;
+    }
+    
+    a:before {
+      left: -2.5px;
+    }
+  
+    a:after {
+      right: 2.5px;
+      background: #fff;
+      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+  
+    a:hover {
+        text-decoration: none;
+    }
+    
+    a:hover:before {
+      background: #fff;
+      width: 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    
+    a:hover:after {
+      background: transparent;
+      width: 100%;
+      transition: 0s;
+    }
+   
+    
+  /* grow */
+  /* ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+  a:hover {
+      text-decoration: none;
+  }
+  
+  li {
+      display: inline-block;
+      padding: 30px;
+  }
+  li.grow {
+      transition: all .2s ease-in-out;
+  }
+  li:hover {
+      transform: scale(1.5);
+  } */
+       
+  
+  
+  /* new css */
+  
+  ul.showcase li{
+    list-style-type: none;
+  }
+    
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 0 20px 0;
+    margin: 0 40px 0 0;
+    position: relative;
+  }
+  
+  
+  a .showcase-caption {
+    display: inline-block;
+  }
+  
+  .showcase-item {
+    line-height: 1;
+  }
+  
+  .showcase-title {
+    font-size: 50px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 900px ) {
+    .showcase-title {
+      font-size: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px ) {
+    .projContainer {
+      padding-left: 23%;
+    }
+  }
+  
+  @media only screen and (max-width: 700px ) {
+    .showcase-title {
+      font-size: 30px;
+    }
+  }
+  
+  .category {
+    font-size: 10px;
+    position: relative;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+  }
+   
+  .showcase-item img {
+    position: fixed;
+    filter: grayscale();
+    filter: blur(5px);
+    opacity: .8;
+    display: none;
+  } 
+  
+  .showcase-link {
+    color: white;
+  }
+  
+  /* End select creation section */
+
+  
+  
+   
