@@ -7,8 +7,8 @@ import { ConnectModalComponent } from './connect-modal/connect-modal.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'home', component: HomeComponent},
+  { path: 'app', component: AppComponent },
+  { path: '', component: HomeComponent},
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'connect', component: ConnectModalComponent, },
