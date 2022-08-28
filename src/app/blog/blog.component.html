@@ -1,13 +1,37 @@
-<!-- Used to display the obsevable (blogPosts$) of the blog posts coming from blog component -->
-<main *ngIf="blogPosts$ | async as blogPosts">
-    <!-- the pre tag formats the json nicely -->
-    <!-- <pre>
-        {{ blogPosts | json }}
-    </pre> -->
+<div class="blogContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="blog-title">Blog</h1>
+            </div>
+        </div>
+        <div class="row">
 
-    <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
-        <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
-        <h2> {{ blogPost.fields.title }} </h2>
-        <p> {{ blogPost.fields.category }} </p>
+            <!-- Blog posts start -->
+            <!-- Used to display the obsevable (blogPosts$) of the blog posts coming from blog component -->
+            <main *ngIf="blogPosts$ | async as blogPosts">
+                <!-- the pre tag formats the json nicely -->
+                <!-- <pre>
+                    {{ blogPosts | json }}
+                </pre> -->
+
+                <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
+                    <div class="row blog-post-container">
+                        <div class="col-md-8 blog-feature-container">
+                            <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p>
+                            <h2 class="blog-post-title"> {{ blogPost.fields.title }} </h2>
+                            <p class="blog-summary"> {{ blogPost.fields.summary }} </p>
+                            <a class="read-more-link" href="#">READ MORE</a>
+                        </div>
+                        <div class="col-md-4 blog-img-container">
+                            <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
     </div>
-</main>
+</div>
+
+
