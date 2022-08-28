@@ -2,6 +2,10 @@
 const express = require('express');
 const path = require('path');
 
+// Server will load anything in .env to an enviromnent variable
+require ('dotenv').config()
+// console.log(process.env)
+
 const app = express();
 
 // Serve only the static files form the dist directory

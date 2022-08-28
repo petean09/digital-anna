@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { provideRoutes } from '@angular/router';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -12,6 +13,10 @@ export class ContentfulService {
 
   // contents to contentful to retrieved date
   private client = createClient({
+    // I can't get dotenv to work
+    // space: process.env.spaceId,
+    // accessToken: process.env.accessToken,
+
     space: environment.spaceId,
     accessToken: environment.accessToken
   })
