@@ -7,6 +7,9 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { DoodlesComponent } from './doodles/doodles.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
+
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,13 @@ import { DoodlesComponent } from './doodles/doodles.component';
     AboutComponent,
     BlogComponent,
     HomeComponent,
-    DoodlesComponent
+    DoodlesComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

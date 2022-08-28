@@ -1,0 +1,23 @@
+<div class="blogPostContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="main" *ngIf="blogPost$ | async as blogPost">
+                    <!-- <pre>
+                        {{ blogPost | json }}
+                    </pre> -->
+                    <img class="post-img" [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+                    <div class="post-container">
+                        <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p>
+                        <h2 class="blog-post-title"> {{ blogPost.fields.title }} </h2>
+                        <p class="blog-content">
+                            <markdown ngPreserveWhitespaces>
+                                {{ blogPost.fields.contentV2 }}
+                            </markdown>    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

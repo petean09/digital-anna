@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { DoodlesComponent } from './doodles/doodles.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 const routes: Routes = [
   { path: 'app', component: AppComponent },
   { path: '', component: HomeComponent},
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'doodles', component: DoodlesComponent}
+  { path: 'doodles', component: DoodlesComponent},
+  { path: 'blog/:id', component: BlogPostComponent}
 ];
 
 @NgModule({

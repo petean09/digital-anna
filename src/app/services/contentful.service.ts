@@ -22,4 +22,12 @@ export class ContentfulService {
     // converting promise to an observable so it can return to the blog component
     return from(promise);
   }
+
+  getEntryById(id: string ){
+    // creates a promise of one blog post id from contentful
+    const promise = this.client.getEntry(id);
+    // converting promise to an observable so it can return to the blog post component
+    return from(promise);
+  }
+  
 }

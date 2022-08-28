@@ -21,7 +21,7 @@
                             <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p>
                             <h2 class="blog-post-title"> {{ blogPost.fields.title }} </h2>
                             <p class="blog-summary"> {{ blogPost.fields.summary }} </p>
-                            <a class="read-more-link" href="#">READ MORE</a>
+                            <a class="read-more-link" [routerLink]="[blogPost.sys.id]">READ MORE</a>
                         </div>
                         <div class="col-md-4 blog-img-container">
                             <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
