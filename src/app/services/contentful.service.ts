@@ -17,8 +17,8 @@ export class ContentfulService {
     // space: process.env.spaceId,
     // accessToken: process.env.accessToken,
 
-    space: process.env['spaceId'],
-    accessToken: process.env['accessToken']
+    space: environment.spaceId,
+    accessToken: environment.accessToken
   })
 
   getAllEntries() {
