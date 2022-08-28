@@ -15,13 +15,14 @@ export class BlogPostComponent implements OnInit {
   blogPost$: Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.route.params.subscribe(
-      params => {
-        const id = params['id'];
+    // code for contently to get individual posts
+  //   this.route.params.subscribe(
+  //     params => {
+  //       const id = params['id'];
 
-        this.blogPost$ = this.contentfulService.getEntryById(id);
-      }
-    );
+  //       this.blogPost$ = this.contentfulService.getEntryById(id);
+  //     }
+  //   );
   }
 
 }

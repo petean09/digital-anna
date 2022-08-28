@@ -10,6 +10,7 @@ import { DoodlesComponent } from './doodles/doodles.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 
 import { MarkdownModule } from 'ngx-markdown';
+import { AnimalHouseComponent } from './animal-house/animal-house.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MarkdownModule } from 'ngx-markdown';
     BlogComponent,
     HomeComponent,
     DoodlesComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    AnimalHouseComponent
   ],
   imports: [
     BrowserModule,

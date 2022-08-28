@@ -16,7 +16,7 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     // retrieves all the blog posts from the contentful service. This is an observable
-    this.blogPosts$ = this.contentfulService.getAllEntries();
+    // this.blogPosts$ = this.contentfulService.getAllEntries();
   }
 
 }
