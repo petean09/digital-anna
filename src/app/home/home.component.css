@@ -14,7 +14,7 @@
     padding-top: 6rem;
     line-height: 1.8em;
     color: #9c9998;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .personal-image-container { 
@@ -34,11 +34,15 @@
 
 
 /* Select creation section */
-.creation-title{
+.project-title-container{
     padding-top: 6em;
     padding-bottom: 6em;
+    
 }
-  
+
+.project-title{
+  font-size: 4em;
+}
   
 .bounce {
     animation: bounce 2s infinite;
@@ -163,12 +167,14 @@
   
   .showcase-item {
     line-height: 1;
+    font-family: 'Roboto Flex', sans-serif;
   }
   
   .showcase-title {
     font-size: 50px;
     letter-spacing: 0px;
     margin: 0;
+    font-family: 'Roboto Flex', sans-serif;
   }
   
   @media only screen and (max-width: 900px ) {

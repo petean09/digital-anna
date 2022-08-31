@@ -12,6 +12,7 @@ header{
 .menu{
    margin-top: 10px;
    z-index: 5;
+   font-family: 'Roboto Flex', sans-serif;
 }
 
 .menu ul{
@@ -133,5 +134,6 @@ header{
 
 .copyright{
   text-align: right;
+  font-family: 'Roboto Flex', sans-serif;
 }
 
