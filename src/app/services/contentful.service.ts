@@ -13,27 +13,27 @@ export class ContentfulService {
 
   // This whole section is for the blog (api connect for contentful)
   // // contents to contentful to retrieved date
-  // private client = createClient({
-  //   // I can't get dotenv to work
-  //   // space: process.env.spaceId,
-  //   // accessToken: process.env.accessToken,
+  private client = createClient({
+    // I can't get dotenv to work
+    // space: process.env.SPACE_ID,
+    // accessToken: process.env.ACCESS_TOKEN,
 
-  //   space: environment.spaceId,
-  //   accessToken: environment.accessToken
-  // })
+    space: environment.SPACE_ID,
+    accessToken: environment.ACCESS_TOKEN
+  })
 
-  // getAllEntries() {
-  //   // creates a promise of all the blog posts from contentful
-  //   const promise = this.client.getEntries()
-  //   // converting promise to an observable so it can return to the blog component
-  //   return from(promise);
-  // }
+  getAllEntries() {
+    // creates a promise of all the blog posts from contentful
+    const promise = this.client.getEntries()
+    // converting promise to an observable so it can return to the blog component
+    return from(promise);
+  }
 
-  // getEntryById(id: string ){
-  //   // creates a promise of one blog post id from contentful
-  //   const promise = this.client.getEntry(id);
-  //   // converting promise to an observable so it can return to the blog post component
-  //   return from(promise);
-  // }
+  getEntryById(id: string ){
+    // creates a promise of one blog post id from contentful
+    const promise = this.client.getEntry(id);
+    // converting promise to an observable so it can return to the blog post component
+    return from(promise);
+  }
   
 }

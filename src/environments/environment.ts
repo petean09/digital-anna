@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  spaceId: 'ys0go1t5lqf1',
-  accessToken: 'wAk_qis2o_D-m3K-NeD7RsQkPQEuR-0EN3NUlKegr2c'
+  SPACE_ID: 'ys0go1t5lqf1',
+  ACCESS_TOKEN: 'ucYZGsIwdjF02Y4kh3BH6yfkn5NXbRKw_6Qqe3E52ZQ'
 };
 
 /*
