@@ -4,7 +4,7 @@ const path = require('path');
 
 // Server will load anything in .env to an enviromnent variable
 require ('dotenv').config()
-console.log(process.env)
+// console.log(process.env)
 
 const app = express();
 
