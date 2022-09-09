@@ -17,13 +17,13 @@ export class AppComponent {
   openMenu() {
     this.menuVariable =! this.menuVariable;
     this.menu_icon_variable =! this.menu_icon_variable;
-    this.navbarContainer =! this.navbarContainer;
+    // this.navbarContainer =! this.navbarContainer;
   }
 
   closeMenu() {
     this.menuVariable =! this.menuVariable;
     this.menu_icon_variable =! this.menu_icon_variable;
-    this.navbarContainer =! this.navbarContainer;
+    // this.navbarContainer =! this.navbarContainer;
   }
 }
 

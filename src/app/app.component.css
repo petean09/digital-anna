@@ -10,10 +10,11 @@ header{
     backdrop-filter: saturate(180%) blur(20px);
   }
 
-.navFilter{
+/* connected to click in app.html */
+/* .navFilter{
     backdrop-filter: none;
     background-color: black
-}
+} */
 
 .logo{
     height: 50px;
