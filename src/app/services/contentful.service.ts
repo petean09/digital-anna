@@ -15,8 +15,8 @@ export class ContentfulService {
   // // contents to contentful to retrieved date
   private client = createClient({
     // I can't get dotenv to work
-    // space: process.env.SPACE_ID,
-    // accessToken: process.env.ACCESS_TOKEN,
+    // space: process.env.CONTENTFUL_SPACE_ID,
+    // accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 
     space: environment.CONTENTFUL_SPACE_ID,
     accessToken: environment.CONTENTFUL_ACCESS_TOKEN
