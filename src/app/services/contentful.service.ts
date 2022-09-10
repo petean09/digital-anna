@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { provideRoutes } from '@angular/router';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
