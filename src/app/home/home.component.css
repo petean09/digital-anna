@@ -142,6 +142,10 @@
   
   
   /* new css */
+
+  .inline-block-container{
+    display: inline-block;
+  }
   
   ul.showcase li{
     list-style-type: none;

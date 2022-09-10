@@ -37,7 +37,7 @@
                     <main *ngIf="selectWorks$ | async as selectWorks">
                         <!-- <pre>{{ selectWorks.items | json }}</pre> -->
                         <ul class="showcase sibling-fade">
-                            <div *ngFor="let selectWork of selectWorks.items">
+                            <div class="inline-block-container" *ngFor="let selectWork of selectWorks.items">
                                 
                                 <div *ngIf="selectWork.sys.contentType.sys.id == 'selectWork'">
             
