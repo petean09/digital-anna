@@ -3,3 +3,7 @@ html {
     background-color: white;
     font-family: 'Roboto Flex', sans-serif;
 }
+
+.container-fluid{
+    padding: 0px 4% !important;
+}

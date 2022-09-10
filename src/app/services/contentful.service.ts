@@ -35,5 +35,4 @@ export class ContentfulService {
     // converting promise to an observable so it can return to the blog post component
     return from(promise);
   }
-  
 }

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { ContentfulService } from '../services/contentful.service';
+
 
 @Component({
   selector: 'app-animal-house',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimalHouseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private contentfulService: ContentfulService) { }
+
+  selectWorks$: Observable<any> | undefined;
 
   ngOnInit(): void {
+     // code for contently to get individual works
+     this.route.params.subscribe(
+      params => {
+        const id = params['id'];
+
+        this.selectWorks$ = this.contentfulService.getEntryById(id);
+      }
+    );
   }
 
 }

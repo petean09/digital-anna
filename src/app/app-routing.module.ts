@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'doodles', component: DoodlesComponent},
   { path: 'blog/:id', component: BlogPostComponent},
-  { path: 'animal-house', component: AnimalHouseComponent},
+  { path: 'select-work/:id', component: AnimalHouseComponent},
 ];
 
 @NgModule({

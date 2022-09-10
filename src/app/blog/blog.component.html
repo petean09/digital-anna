@@ -1,5 +1,5 @@
 <div class="blogContainer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <h1 class="blog-title">Blog</h1>
@@ -16,15 +16,21 @@
                 </pre> -->
 
                 <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
-                    <div class="row blog-post-container">
-                        <div class="col-md-8 blog-feature-container">
-                            <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p>
-                            <h2 class="blog-post-title"> {{ blogPost.fields.title }} </h2>
-                            <p class="blog-summary"> {{ blogPost.fields.summary }} </p>
-                            <a class="read-more-link" [routerLink]="[blogPost.sys.id]">READ MORE</a>
-                        </div>
-                        <div class="col-md-4 blog-img-container">
-                            <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+                    <pre>
+                        <!-- {{ blogPost.sys | json}} -->
+
+                    </pre>
+                    <div *ngIf="blogPost.sys.contentType.sys.id == 'blogPost'">
+                        <div class="row blog-post-container">
+                            <div class="col-md-8 blog-feature-container">
+                                <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p>
+                                <h2 class="blog-post-title"> {{ blogPost.fields.title }} </h2>
+                                <p class="blog-summary"> {{ blogPost.fields.summary }} </p>
+                                <a class="read-more-link" [routerLink]="[blogPost.sys.id]">READ MORE</a>
+                            </div>
+                            <div class="col-md-4 blog-img-container">
+                                <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>

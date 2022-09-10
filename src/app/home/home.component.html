@@ -1,5 +1,5 @@
 <div class="homeContainer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <span class="landing-title">I'm Anna Peterson &mdash; coder, designer, data privacy consultant, & learner</span>
@@ -12,8 +12,8 @@
                     <br><br>
                     I do, all the time. That's why I created this place, 
                     my digital mental space, to exercise my neural networks, 
-                    capture the useful (and sometimes useless) tidbits of information I learn,
-                    and share my doodles. 
+                    capture the useful (sometimes useless) tidbits of information I learn,
+                    and share creative things. 
                     <br><br>
                     Essentially, this space is my brain turned digital.
                     <br><br>
@@ -26,75 +26,51 @@
             </div>
         </div>
 
-
-        <!-- Projects -->
+       
+    <!-- Projects -->
         <div class="row">
             <div class="col">
                 <div class="containerMain">
                     <div class="project-title-container">
                         <h1 class="project-title">Select Work</h1>
                     </div>
+                    <main *ngIf="selectWorks$ | async as selectWorks">
+                        <!-- <pre>{{ selectWorks.items[0].fields.Project1[0].sys.id | json }}</pre> -->
                         <ul class="showcase sibling-fade">
                             <li class="showcase-item">
-                                <a [routerLink]="'/animal-house'" class="showcase-link">
+                                <a [routerLink]="['select-work/', selectWorks.items[0].fields.Project1[0].sys.id]" class="showcase-link">
                                     <div class="showcase-caption">
                                         <h3 class="showcase-title">Animal House Coffee Co.</h3>
                                         <p class="category">Brand Identity / Product Design</p>
                                     </div>
                                 </a>
-                        </li>
-                        <li class="showcase-item">
-                                <a [routerLink]="'/lives'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Lives Campaign</h3>
-                                        <p class="category">Message Stragety</p>
-                                    </div>
-                                </a>
-                        </li>
-                        <li class="showcase-item">
-                                <a [routerLink]="'/expense-elephant'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Expense Elephant</h3>
-                                        <p class="category">Web Dev</p>
-                                    </div>
-                                </a>
-                        </li>
-                        <li class="showcase-item">
+                            </li>
+                            <li class="showcase-item">
+                                    <a [routerLink]="'/lives'" class="showcase-link">
+                                        <div class="showcase-caption">
+                                            <h3 class="showcase-title">Lives Campaign</h3>
+                                            <p class="category">Message Stragety</p>
+                                        </div>
+                                    </a>
+                            </li>
+                            <li class="showcase-item">
+                                    <a [routerLink]="'/expense-elephant'" class="showcase-link">
+                                        <div class="showcase-caption">
+                                            <h3 class="showcase-title">Expense Elephant</h3>
+                                            <p class="category">Web Dev</p>
+                                        </div>
+                                    </a>
+                            </li>
+                            <li class="showcase-item">
                                 <a [routerLink]="'/penguin-stereo'" class="showcase-link">
                                     <div class="showcase-caption">
                                         <h3 class="showcase-title">Speaker</h3>
                                         <p class="category">3D Modeling</p>
                                     </div>
                                 </a>
-                        </li>
-                
-                        <!-- <li class="showcase-item">
-                                <a [routerLink]="'/success-wayfinding'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Scaled Success</h3>
-                                        <p class="category">Wayfinding Design</p>
-                                    </div>
-                                </a>
-                                
-                        </li> -->
-                        <!-- <li class="showcase-item">
-                                <a [routerLink]="'/airplane-ticket'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Airplane Tickets</h3>
-                                        <p class="category">Information Design</p>
-                                    </div>
-                                </a>
-                                <img src="" alt="">
-                        </li> -->
-                        <!-- <li class="showcase-item">
-                                <a [routerLink]="'/typeface-magazine'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Typeface Magezine</h3>
-                                        <p class="category">Layout</p>
-                                    </div>
-                                </a>
-                        </li> -->
-                        <li class="showcase-item">
+                            </li>
+                    
+                            <li class="showcase-item">
                                 <a [routerLink]="'/restaurant-finder'" class="showcase-link">
                                     <div class="showcase-caption">
                                         <h3 class="showcase-title">Restaurant Finder</h3>
@@ -102,36 +78,12 @@
                                     </div>
                                 </a>
                                 <img src="" alt="">
-                        </li>
-                        <!-- <li class="showcase-item">
-                                <a [routerLink]="'/grade-calculator'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Grade Calculator</h3>
-                                        <p class="category">Web Dev</p>
-                                    </div>
-                                </a>
-                        </li> -->
-                        <!-- <li class="showcase-item">
-                                <a [routerLink]="'/zephyr'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Zephyr</h3>
-                                        <p class="category">Brand Identity</p>
-                                    </div>
-                                </a>
-                        </li> -->
-                        <!-- <li class="showcase-item">
-                                <a [routerLink]="'/brush-buddies'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Brush Buddies</h3>
-                                        <p class="category">Brand Identity / Product Design</p>
-                                    </div>
-                                </a>
-                        </li> -->
-                    </ul>
-                 </div>
+                            </li>
+                        </ul>
+                    </main>
+                </div>
             </div>
+            <!-- End select creation -->
         </div>
-        <!-- End select creation -->
-
     </div>
 </div>
