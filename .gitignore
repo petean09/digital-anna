@@ -43,4 +43,4 @@ Thumbs.db
 
 # Added
 .env
-src/environments/
+/src/environments
