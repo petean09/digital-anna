@@ -17,7 +17,7 @@
 
                 <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
                     <pre>
-                        <!-- {{ blogPost.sys | json}} -->
+                        <!-- {{ blogPost | json}} -->
 
                     </pre>
                     <div *ngIf="blogPost.sys.contentType.sys.id == 'blogPost'">
@@ -29,7 +29,10 @@
                                 <a class="read-more-link" [routerLink]="[blogPost.sys.id]">READ MORE</a>
                             </div>
                             <div class="col-md-4 blog-img-container">
-                                <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+                                <img [src]="blogPost.fields.featuredImage.fields.file.url" 
+                                loading="lazy"
+                                decoding="async"
+                                alt="Blog Post">
                             </div>
                         </div>
                     </div>

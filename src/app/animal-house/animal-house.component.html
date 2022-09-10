@@ -1,49 +1,63 @@
-<!-- <div class="projContainer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="desc">
-                    <h2>Animal House Coffee Company</h2>
-                    <p class="descBody">
-                    <br>
-                    With mirobreweries taking over the world the goal of this design was to create a modern cold brew
-                    coffee company with the style of craft beer. 
-                    <br><br>
-                    "A craft, no-BS, smooth coffee to accompany your adventurous spirit. Slow roasted for the
-                    full flavor of the bean and purley proccessed for authenticity in every sip."
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="deliv">
-                    <h6 class="smallHeader">Deliverables</h6>
-                    <p class="detailItem">Brand Identity</p>
-                    <p class="detailItem">Product Design</p>
-                    <p class="detailItem">Creative Direction</p>
-                    
-                    <br>
-                    <h6 class="smallHeader">Tools</h6>
-                    <p class="detailItem">Illustrator</p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="img-container">
+<div class="projContainer">
+    <div class="container-fluid">
+        <main *ngIf="selectWork$ | async as selectWork">
+            <!-- <pre>
+                {{ selectWork.fields.featuredImages[0].fields | json }}
+            </pre> -->
             <div class="row">
-                <div class="col-md-4">
-                    <img class="img" src="../../assets/projects/animal-house/all-front.jpg" alt="">
+                <div class="col-md-9">
+                    <div class="desc">
+                        <h2>{{ selectWork.fields.title }}</h2>
+                        <br>
+                        <p class="descBody">
+                            <markdown ngPreserveWhitespaces>
+                                {{ selectWork.fields.summary }}
+                            </markdown>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img" src="../../assets/projects/animal-house/all-animal.jpg" alt="">
-                </div>
-                <div class="col-md-4">
-                    <img class="img" src="../../assets/projects/animal-house/all-animal.jpg" alt="">
+                <div class="col-md-3">
+                    <div class="deliv">
+                        <h6 class="smallHeader">Deliverables</h6>
+                        <div *ngFor="let selectDeliverable of selectWork.fields.deliverables">
+                            <p class="detailItem">{{ selectDeliverable }}</p>
+                        </div>
+                        <br>
+                        <h6 class="smallHeader">Tools</h6>
+                        <div *ngFor="let selectTool of selectWork.fields.tools">
+                            <p class="detailItem">{{ selectTool }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="img-container">
+                <div class="row">
+                    <!-- <div *ngFor="let selectImg of selectWork.fields.featuredImage">
+                        <div class="col-md-4">
+                            <img class="img" [src]="selectImg.fields.file.url" alt="">
+                        </div>
+                    </div> -->
+                    <div class="col-md-4">
+                        <img class="img" [src]="selectWork.fields.featuredImages[0].fields.file.url" 
+                        loading="lazy"
+                        decoding="async"
+                        alt="Featured Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img" [src]="selectWork.fields.featuredImages[1].fields.file.url" 
+                        loading="lazy"
+                        decoding="async"
+                        alt="Featured Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img" [src]="selectWork.fields.featuredImages[2].fields.file.url" 
+                        loading="lazy"
+                        decoding="async"
+                        alt="Featured Image 3">
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-</div> -->
-<span>works!</span>
+</div>

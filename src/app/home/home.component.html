@@ -35,51 +35,43 @@
                         <h1 class="project-title">Select Work</h1>
                     </div>
                     <main *ngIf="selectWorks$ | async as selectWorks">
-                        <!-- <pre>{{ selectWorks.items[0].fields.Project1[0].sys.id | json }}</pre> -->
+                        <!-- <pre>{{ selectWorks.items | json }}</pre> -->
                         <ul class="showcase sibling-fade">
-                            <li class="showcase-item">
-                                <a [routerLink]="['select-work/', selectWorks.items[0].fields.Project1[0].sys.id]" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Animal House Coffee Co.</h3>
-                                        <p class="category">Brand Identity / Product Design</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="showcase-item">
-                                    <a [routerLink]="'/lives'" class="showcase-link">
-                                        <div class="showcase-caption">
-                                            <h3 class="showcase-title">Lives Campaign</h3>
-                                            <p class="category">Message Stragety</p>
-                                        </div>
-                                    </a>
-                            </li>
-                            <li class="showcase-item">
-                                    <a [routerLink]="'/expense-elephant'" class="showcase-link">
-                                        <div class="showcase-caption">
-                                            <h3 class="showcase-title">Expense Elephant</h3>
-                                            <p class="category">Web Dev</p>
-                                        </div>
-                                    </a>
-                            </li>
-                            <li class="showcase-item">
-                                <a [routerLink]="'/penguin-stereo'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Speaker</h3>
-                                        <p class="category">3D Modeling</p>
-                                    </div>
-                                </a>
-                            </li>
-                    
-                            <li class="showcase-item">
-                                <a [routerLink]="'/restaurant-finder'" class="showcase-link">
-                                    <div class="showcase-caption">
-                                        <h3 class="showcase-title">Restaurant Finder</h3>
-                                        <p class="category">Web Dev</p>
-                                    </div>
-                                </a>
-                                <img src="" alt="">
-                            </li>
+                            <div *ngFor="let selectWork of selectWorks.items">
+                                
+                                <div *ngIf="selectWork.sys.contentType.sys.id == 'selectWork'">
+            
+                                    <li class="showcase-item">
+                                        <a [routerLink]="['select-work/', selectWork.sys.id]" class="showcase-link">
+                                            <div class="showcase-caption">
+                                                <h3 class="showcase-title">{{ selectWork.fields.title }}</h3>
+                                                <p class="category">{{ selectWork.fields.subTitle }}</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- 
+                                    <li class="showcase-item">
+                                            <a [routerLink]="'/expense-elephant'" class="showcase-link">
+                                                <div class="showcase-caption">
+                                                    <h3 class="showcase-title">Expense Elephant</h3>
+                                                    <p class="category">Web Dev</p>
+                                                </div>
+                                            </a>
+                                    </li>
+                                    
+                            
+                                    <li class="showcase-item">
+                                        <a [routerLink]="'/restaurant-finder'" class="showcase-link">
+                                            <div class="showcase-caption">
+                                                <h3 class="showcase-title">Restaurant Finder</h3>
+                                                <p class="category">Web Dev</p>
+                                            </div>
+                                        </a>
+                                    </li> -->
+                                </div>
+                            </div>
                         </ul>
+                            
                     </main>
                 </div>
             </div>

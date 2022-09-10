@@ -13,7 +13,7 @@ export class AnimalHouseComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private contentfulService: ContentfulService) { }
 
-  selectWorks$: Observable<any> | undefined;
+  selectWork$: Observable<any> | undefined;
 
   ngOnInit(): void {
      // code for contently to get individual works
@@ -21,7 +21,7 @@ export class AnimalHouseComponent implements OnInit {
       params => {
         const id = params['id'];
 
-        this.selectWorks$ = this.contentfulService.getEntryById(id);
+        this.selectWork$ = this.contentfulService.getEntryById(id);
       }
     );
   }
