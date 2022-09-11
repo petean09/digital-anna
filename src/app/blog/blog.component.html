@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h1 class="blog-title">Blog</h1>
+                <h1 class="blog-title">Blog.</h1>
             </div>
         </div>
         <div class="row">
@@ -16,20 +16,17 @@
                 </pre> -->
 
                 <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
-                    <pre>
-                        <!-- {{ blogPost | json}} -->
-
-                    </pre>
                     <div *ngIf="blogPost.sys.contentType.sys.id == 'blogPost'">
                         <div class="row blog-post-container">
-                            <div class="col-md-8 blog-feature-container">
+                            <div class="col-md-8 order-1 blog-feature-container">
+                                <h2 class="blog-post-title" [routerLink]="[blogPost.sys.id]"> {{ blogPost.fields.title }} </h2>
                                 <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p>
-                                <h2 class="blog-post-title"> {{ blogPost.fields.title }} </h2>
                                 <p class="blog-summary"> {{ blogPost.fields.summary }} </p>
-                                <a class="read-more-link" [routerLink]="[blogPost.sys.id]">READ MORE</a>
+                                <!-- <a class="read-more-link" [routerLink]="[blogPost.sys.id]">READ MORE</a> -->
                             </div>
-                            <div class="col-md-4 blog-img-container">
+                            <div class="col-md-4 order-md-2 blog-img-container">
                                 <img [src]="blogPost.fields.featuredImage.fields.file.url" 
+                                [routerLink]="[blogPost.sys.id]"
                                 loading="lazy"
                                 decoding="async"
                                 alt="Blog Post">

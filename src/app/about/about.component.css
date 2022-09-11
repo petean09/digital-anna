@@ -2,28 +2,34 @@
     background-color: black;
     color: white;
     font-family: 'Roboto Flex', sans-serif;
+    padding-top: 6rem;
 }
 
 .about-title{
-    font-size: 12vw;
-    text-align: center;
+    font-size: 10vw;
+    /* justify-content: left; */
     display: flex;
-    padding-bottom: 2em;
-    padding-top: 1.5em;
-    line-height: 1;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    /* line-height: 1; */
     /* font-family: 'Domaine-Display-SemiBold'; */
 }
 
 .description-titles{
     color: white;
- }
+}
 
-.about-subtitle {
+.about-section {
     padding-left: 10em;
     padding-right: 10em;
     color: #aaaaaa;
     padding-top: 4rem;
     font-size: 20px;
+    border-top: solid #ffffff 1px;
+}
+
+.sub-desc-titles{
+    color: white;
 }
 
 @media (max-width: 576px) { 
@@ -32,7 +38,7 @@
         padding-right: 20px;
         line-height: 1.8em;
     }
- }
+}
 
  /* Info section */
 .info-title-container{
