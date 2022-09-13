@@ -5,15 +5,15 @@
 
 .post-container {
     padding-bottom: 4rem;
-    color: #aaaaaa;
+    color: rgb(170, 170, 170);
     margin-left: 20%;
     margin-right: 20%;
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 960px) { 
     .post-container{
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
  }
 
@@ -27,5 +27,6 @@
 
 .blog-post-title{
     color: white;
+    margin-bottom: 2rem;
 }
 

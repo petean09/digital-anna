@@ -1,7 +1,7 @@
 .projContainer {
     padding-top: 150px;
     background-color: black;
-    color: #aaaaaa;
+    color: rgb(170, 170, 170);
 } 
 
 .processTitle {
@@ -30,7 +30,7 @@
   
 .descBody {
     font-size: 20px;
-    color: #aaaaaa;
+    color: rgb(170, 170, 170);
  }
   
 .deliv {

@@ -1,0 +1,37 @@
+.doodleContainer{
+    background-color: black;
+    color: white;
+    padding-top: 6rem;
+}
+
+.doodle-title{
+    font-size: 10vw;
+    display: flex;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    border-bottom: solid #ffffff 1px;
+    /* font-family: 'Domaine-Display-SemiBold'; */
+}
+
+.imgContainer {
+    margin-top: 6rem;
+}
+
+.img-container{
+    display: inline-block;
+    width: 50%;
+    padding: 15px 15px;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 24px;
+}
+
+@media (max-width: 960px) { 
+    .img-container{
+        width: 100%;
+        padding: 10px 10px;
+    }
+ }
+

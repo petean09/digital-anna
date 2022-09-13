@@ -1,1 +1,29 @@
-<p>doodles works!</p>
+<div class="doodleContainer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 class="doodle-title">Doodles.</h1>
+            </div>
+        </div>
+         <div class="imgContainer">
+            <main *ngIf="doodles$ | async as doodles">
+                <!-- <pre>
+                    {{ doodles.items[0].fields.doodleImage[0].fields.file.fileName | json }}
+                </pre> -->
+
+
+                <div class="" *ngFor="let doodleArray of doodles.items">
+                    <div *ngIf="doodleArray.sys.contentType.sys.id == 'doodles'">
+                        <div class="img-container" *ngFor="let image of doodleArray.fields.doodleImage">
+                            <img [src]="image.fields.file.url" 
+                            loading="lazy"
+                            decoding="async"
+                            alt="Doodle">
+                        </div>
+                    </div>
+                        
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

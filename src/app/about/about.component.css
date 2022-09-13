@@ -1,17 +1,15 @@
 .aboutContainer{
     background-color: black;
     color: white;
-    font-family: 'Roboto Flex', sans-serif;
+    /* font-family: 'Roboto Flex', sans-serif; */
     padding-top: 6rem;
 }
 
 .about-title{
     font-size: 10vw;
-    /* justify-content: left; */
     display: flex;
     padding-bottom: 4rem;
     padding-top: 4rem;
-    /* line-height: 1; */
     /* font-family: 'Domaine-Display-SemiBold'; */
 }
 
