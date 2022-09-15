@@ -12,7 +12,7 @@
             <main *ngIf="blogPosts$ | async as blogPosts">
                 <!-- the pre tag formats the json nicely -->
                 <!-- <pre>
-                    {{ blogPosts | json }}
+                    {{ blogPosts.items | json }}
                 </pre> -->
 
                 <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">

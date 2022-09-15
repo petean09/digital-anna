@@ -1,7 +1,8 @@
 .homeContainer{
     background-color: black;
     color: white;
-    padding-top: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .landing-title{
