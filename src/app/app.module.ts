@@ -10,7 +10,7 @@ import { DoodlesComponent } from './doodles/doodles.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 
 import { MarkdownModule } from 'ngx-markdown';
-import { AnimalHouseComponent } from './animal-house/animal-house.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { AnimalHouseComponent } from './animal-house/animal-house.component';
     HomeComponent,
     DoodlesComponent,
     BlogPostComponent,
-    AnimalHouseComponent
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

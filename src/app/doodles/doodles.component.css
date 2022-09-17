@@ -11,7 +11,8 @@
     padding-bottom: 4rem;
     padding-top: 4rem;
     border-bottom: solid #ffffff 1px;
-    /* font-family: 'Domaine-Display-SemiBold'; */
+    font-family: 'Domaine-Display-SemiBold';
+    font-weight: bold;
 }
 
 .imgContainer {

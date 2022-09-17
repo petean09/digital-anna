@@ -6,7 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { DoodlesComponent } from './doodles/doodles.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
-import { AnimalHouseComponent } from './animal-house/animal-house.component';
+import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
   { path: 'app', component: AppComponent },
@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'doodles', component: DoodlesComponent},
   { path: 'blog/:id', component: BlogPostComponent},
-  { path: 'select-work/:id', component: AnimalHouseComponent},
+  { path: 'select-work/:id', component: ProjectComponent},
 ];
 
 @NgModule({

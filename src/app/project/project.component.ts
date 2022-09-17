@@ -5,11 +5,11 @@ import { ContentfulService } from '../services/contentful.service';
 
 
 @Component({
-  selector: 'app-animal-house',
-  templateUrl: './animal-house.component.html',
-  styleUrls: ['./animal-house.component.css']
+  selector: 'app-project',
+  templateUrl: './project.component.html',
+  styleUrls: ['./project.component.css']
 })
-export class AnimalHouseComponent implements OnInit {
+export class ProjectComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private contentfulService: ContentfulService) { }
 
