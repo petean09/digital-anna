@@ -7,16 +7,23 @@
 
 .doodle-title{
     font-size: 10vw;
+    justify-content: left;
     display: flex;
-    padding-bottom: 4rem;
     padding-top: 4rem;
-    border-bottom: solid #ffffff 1px;
+    padding-bottom: 4rem;
     font-family: 'Domaine-Display-SemiBold';
     font-weight: bold;
 }
 
+.disclaimer {
+    padding-top: 4rem;
+    border-top: solid #ffffff 1px;
+    font-style: italic;
+    /* text-align: center; */
+}
+
 .imgContainer {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .img-container{
