@@ -119,8 +119,10 @@ header{
 .footerContainer{
   background-color: black;
   color: white;
-  /* padding-top: 6em;
-  padding-bottom: 6em; */
+  /* padding-bottom: 6em; */
+  border-top: solid white 1px;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .contactMenu {
@@ -144,12 +146,6 @@ header{
   color: white;
 }
 
-
-.copyright{
-  text-align: right;
-  /* font-family: 'Roboto Flex', sans-serif; */
-}
-
 .gif{
   width:100%;
   height: 50%;
@@ -157,4 +153,36 @@ header{
   position:relative;
   /* text-align: center;
   justify-content: center; */
+}
+
+.gif2{
+  width:100%;
+  height: 50%;
+  padding-bottom:50%;
+  position:relative;
+  /* text-align: center;
+  justify-content: center; */
+}
+
+.footer-title{
+  font-size: 7vw;
+  font-family: 'Domaine-Display-SemiBold';
+  padding-bottom: 50px;
+  font-weight: 700;
+}
+
+.footer-subtitle{
+  font-size: 2.5vw;
+  font-weight: 500;
+  /* font-family: 'Domaine-Display-SemiBold'; */
+}
+
+.contact-link{
+    font-size: 15px;
+    position: relative;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
