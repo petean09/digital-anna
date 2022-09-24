@@ -31,7 +31,7 @@ export class BlogComponent implements OnInit {
     // retrieves all the blog posts from the contentful service. This is an observable
     this.blogPosts$ = this.contentfulService.getAllEntries();
 
-    console.log(this.blogPosts$.subscribe(res => console.log(res.items)))
+    // console.log(this.blogPosts$.subscribe(res => console.log(res.items)))
    
   }
 

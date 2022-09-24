@@ -11,7 +11,9 @@
     display: flex;
     padding-bottom: 4rem;
     padding-top: 4rem;
-    font-family: 'Domaine-Display-SemiBold';
+    /* font-family: 'Domaine-Display-SemiBold'; */
+    font-family: 'Roboto Flex', sans-serif;
+    letter-spacing: 6px;
     font-weight: bold;
 }
 

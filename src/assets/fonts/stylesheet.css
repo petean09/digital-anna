@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Domaine-Display';
+    src: url('domaine-display-test-medium.woff');
+}
+
+@font-face {
+    font-family: 'Domaine-Display-ExtraBold';
+    src: url('domaine-display-test-extrabold.woff');
+}
+
+@font-face {
+    font-family: 'Domaine-Display-SemiBold';
+    src: url('domaine-display-test-semibold.woff');
+}
+
+@font-face {
+    font-family: "National";
+    src: url('national-test-regular.woff');
+}
