@@ -102,6 +102,28 @@
                 </span>
             </div>
         </div>
+
+        <!-- Picture section -->
+        <div class="imgContainer">
+            <main *ngIf="aboutPics$ | async as aboutPics">
+                <!-- <pre>
+                    {{ aboutPics | json }}
+                </pre> -->
+                <div class="" *ngFor="let picArray of aboutPics.items">
+                    <div *ngIf="picArray.sys.contentType.sys.id == 'aboutPictures'">
+                        <div class="img-container" *ngFor="let image of picArray.fields.aboutImages">
+                            <img [src]="image.fields.file.url" 
+                            loading="lazy"
+                            decoding="async"
+                            alt="About Me">
+                        </div>
+                    </div>  
+                </div>
+            </main>
+        </div>
+
+        <!-- End picture section -->
+
         <!-- Info section -->
         <div class="row">
             <div class="col-lg-4">
