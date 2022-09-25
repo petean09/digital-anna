@@ -119,7 +119,11 @@ header{
 .footerContainer{
   background-color: black;
   color: white;
-  /* padding-bottom: 6em; */
+  padding-top: 6em;
+  padding-bottom: 1em;
+}
+
+.footerSection{
   border-top: solid white 1px;
   padding-top: 6em;
   padding-bottom: 6em;
@@ -127,6 +131,7 @@ header{
 
 .contactMenu {
   flex-direction: row;
+  justify-content: center;
 }
 
 .social-icon-container {
@@ -146,19 +151,17 @@ header{
   color: white;
 }
 
-.gif2{
+.gif{
   width:100%;
   height: 50%;
   padding-bottom:50%;
   position:relative;
-  /* text-align: center;
-  justify-content: center; */
 }
 
 .footer-title{
   font-size: 7vw;
   font-family: 'Domaine-Display-SemiBold';
-  padding-bottom: 50px;
+  /* padding-bottom: 80px; */
   font-weight: 700;
 }
 
@@ -178,15 +181,14 @@ header{
     text-transform: uppercase;
 }
 
-@media (max-width: 767px) { 
-  .gif2{
-      margin-top: 50px;
-  }
-  
+.bottomFooter{
+  border-bottom: white 1px solid;
+  border-top: white 1px solid;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {   
   .footer-title{
     text-align: center;
-  }
-  .contactMenu{
-    justify-content: center;
   }
 }
