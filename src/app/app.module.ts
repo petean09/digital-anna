@@ -8,9 +8,11 @@ import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { DoodlesComponent } from './doodles/doodles.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { ProjectComponent } from './project/project.component';
 
 import { MarkdownModule } from 'ngx-markdown';
-import { ProjectComponent } from './project/project.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { ProjectComponent } from './project/project.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

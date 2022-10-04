@@ -9,11 +9,11 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
-  { path: 'app', component: AppComponent },
-  { path: '', component: HomeComponent},
-  { path: 'about', component: AboutComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'doodles', component: DoodlesComponent},
+  { path: 'app', component: AppComponent},
+  { path: '', component: HomeComponent, data: { animation: '1'} },
+  { path: 'about', component: AboutComponent, data: { animation: '2'} },
+  { path: 'blog', component: BlogComponent, data: { animation: '3'} },
+  { path: 'doodles', component: DoodlesComponent, data: { animation: '4'}},
   { path: 'blog/:id', component: BlogPostComponent},
   { path: 'select-work/:id', component: ProjectComponent},
 ];

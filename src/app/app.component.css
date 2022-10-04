@@ -3,6 +3,7 @@ header{
     /* padding:12px 0; */
     background-color:  black;
   }
+  
 
 .navbar-container{
     padding: 8px 4%;
@@ -113,6 +114,11 @@ header{
 }
 
 /* End navbar styles */
+
+.content {
+  height: 100%;
+  width: 100%;
+}
 
 /* Footer styles */
 

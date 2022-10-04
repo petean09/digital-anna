@@ -2,7 +2,6 @@
     background-color: black;
     color: white;
     padding-top: 10rem;
-    padding-bottom: 10rem;
 }
 
 .landing-title{
@@ -41,7 +40,7 @@
 /* Select creation section */
 .project-title-container{
     padding-top: 6em;
-    padding-bottom: 6em;
+    padding-bottom: 2em;
     
 }
 

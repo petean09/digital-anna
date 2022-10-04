@@ -13,6 +13,9 @@ export class BlogPostComponent implements OnInit {
   constructor( private route: ActivatedRoute, private contentfulService: ContentfulService) { }
 
   blogPost$: Observable<any> | undefined;
+  date: String = ''
+  // date2: String = ""
+  
 
   ngOnInit(): void {
     // code for contently to get individual posts
@@ -21,8 +24,15 @@ export class BlogPostComponent implements OnInit {
         const id = params['id'];
 
         this.blogPost$ = this.contentfulService.getEntryById(id);
+        this.blogPost$.subscribe(res => {
+          this.date = new Date(res.fields.updatedDate).toDateString();  
+
+          // Another date formate if needed (mm/dd/yyyy)
+          // this.date = new Date(res.fields.updatedDate).toISOString().split('T')[0];
+       });
       }
     );
   }
+
 
 }
