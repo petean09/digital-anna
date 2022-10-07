@@ -14,7 +14,6 @@ export class BlogPostComponent implements OnInit {
 
   blogPost$: Observable<any> | undefined;
   date: String = ''
-  // date2: String = ""
   
 
   ngOnInit(): void {

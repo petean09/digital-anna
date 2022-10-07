@@ -36,6 +36,7 @@
 .blog-post-title{
     margin-bottom: 30px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .blog-date{
@@ -49,6 +50,7 @@
 
 .blog-img-container{
     margin: auto 0;
+    cursor: pointer;
 }
 
 .blog-img-container img {
