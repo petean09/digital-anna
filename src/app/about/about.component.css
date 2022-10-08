@@ -3,6 +3,7 @@
     color: white;
     /* font-family: 'Roboto Flex', sans-serif; */
     padding-top: 6rem;
+    padding-bottom: 4rem;
 }
 
 .about-title{
@@ -51,7 +52,7 @@
 /* Picture section */
 
 .imgContainer {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .img-container{
@@ -77,7 +78,7 @@
 
  /* Info section */
 .info-title-container{
-    padding-top: 10em;
+    padding-top: 6em;
     padding-bottom: 2em;
 }
 
@@ -88,7 +89,8 @@
 
 .info-list-container{
     padding-top: 2em;
-    border-top: solid 1px rgb(170, 170, 170);
+    border-top: solid .5px rgb(170, 170, 170);
+    font-weight: 700;
 }
   
  

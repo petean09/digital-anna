@@ -2,16 +2,17 @@
     background-color: black;
     color: white;
     padding-top: 10rem;
+    padding-bottom: 4rem;
 }
 
 .landing-title{
     font-size: 7vw;
     font-family: 'Roboto Flex', sans-serif;
-    letter-spacing: 6px;
+    /* letter-spacing: 6px; */
     /* font-family: 'Arimo', sans-serif; */
     /* font-family: 'Domaine-Display-SemiBold'; */
     line-height: 1.2em;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .landing-personal-description {
@@ -25,6 +26,12 @@
     padding-top: 6em;
     
 } 
+
+@media only screen and (max-width: 991px ) {
+  .personal-image-container { 
+    padding-top: 4rem;
+  }
+}
 
 .headshot-img { 
     object-fit: contain;
