@@ -8,16 +8,11 @@
                     </pre> -->
                     <img class="post-img" [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
                     <div class="post-container">
-
-                        <p class="blog-date"> 
-                            <!-- {{ blogPost.fields.updatedDate }}  -->
-                            {{this.date}}
-                        </p>
-
+                        <p class="blog-date">{{this.date}}</p>
                         <h1 class="blog-post-title"> {{ blogPost.fields.title }} </h1>
                         <p class="blog-content">
                             <markdown ngPreserveWhitespaces>
-                                {{ blogPost.fields.contentV2 }}
+                                {{ blogPost.fields.content }}
                             </markdown>    
                         </p>
                     </div>

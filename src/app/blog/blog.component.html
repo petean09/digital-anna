@@ -1,8 +1,14 @@
 <div class="blogContainer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h1 class="blog-title">Blog.</h1>
+            <div class="col-md-6">
+                <h1 class="blog-title">Writing.</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="subscribe-container">
+                    <h5 class="subscribe-text">Subscribe so articles go directly to your inbox</h5>
+                    <iframe class="subscribe" src="https://embeds.beehiiv.com/9e378091-b5bb-4506-9666-d7d11468866f?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>            
+                </div>
             </div>
         </div>
         <div class="row">
@@ -19,8 +25,8 @@
                     <div *ngIf="blogPost.sys.contentType.sys.id == 'blogPost'">
                         <div class="row blog-post-container">
                             <div class="col-md-8 order-1 blog-feature-container">
+                                <p class="blog-date"> {{ blogPost.fields.dateOfPost }} </p>
                                 <h2 class="blog-post-title" [routerLink]="[blogPost.sys.id]"> {{ blogPost.fields.title }} </h2>
-                                <!-- <p class="blog-date"> {{ blogPost.fields.updatedDate }} </p> -->
                                 <!-- <p class="blog-date"> {{ blogPost.fields.category }} </p> -->
                                 <p class="blog-summary">{{ blogPost.fields.summary }} </p>
                             </div>
