@@ -137,6 +137,7 @@ header{
 .contactMenu {
   flex-direction: row;
   justify-content: center;
+  /* justify-content: right; */
 }
 
 .social-icon-container {
@@ -190,6 +191,10 @@ header{
   border-bottom: white 1px solid;
   border-top: white 1px solid;
   padding: 10px;
+}
+
+.copyright{
+  justify-content: right;
 }
 
 @media (max-width: 767px) {   
