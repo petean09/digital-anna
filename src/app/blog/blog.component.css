@@ -21,6 +21,18 @@
     text-align: center;
 }
 
+.word {
+    color: #e9c62c;;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.word:hover {
+    color: blue;
+    transition: 0.4s ease-in-out;
+}
+
 @media (max-width: 576px) { 
     .subscribe-container{
         padding-top: 0;
