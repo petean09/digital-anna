@@ -1,7 +1,7 @@
 .projContainer {
     padding-top: 150px;
-    background-color: black;
-    color: rgb(170, 170, 170);
+    background-color: white;
+    color: black;
     padding-bottom: 150px;
 } 
 
@@ -25,13 +25,13 @@
 }
   
 .desc {
-    color: white;
+    color: black;
     font-size: 35px;
 }
   
 .descBody {
     font-size: 20px;
-    color: rgb(170, 170, 170);
+    color: black;
  }
   
 .deliv {
@@ -48,7 +48,7 @@
 .smallHeader {
     margin-bottom: 8px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-size: 11px;
     letter-spacing: 2px;
 }
