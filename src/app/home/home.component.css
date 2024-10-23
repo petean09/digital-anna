@@ -1,6 +1,6 @@
 .homeContainer{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-top: 10rem;
     padding-bottom: 4rem;
 }
@@ -18,7 +18,7 @@
 .landing-personal-description {
     padding-top: 6rem;
     line-height: 1.8em;
-    color: rgb(170, 170, 170);
+    color: black;
     font-size: 1.25em;
 }
 

@@ -1,6 +1,6 @@
 .doodleContainer{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-top: 6rem;
     padding-bottom: 4rem;
 }
@@ -19,7 +19,7 @@
 
 .disclaimer {
     padding-top: 4rem;
-    border-top: solid #ffffff 1px;
+    border-top: solid black 1px;
     /* font-style: italic; */
     /* text-align: center; */
 }

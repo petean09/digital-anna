@@ -1,11 +1,11 @@
 .blogPostContainer{
-    background-color: black;
+    background-color: white;
     /* text-align: center; */
 }
 
 .post-container {
     padding-bottom: 4rem;
-    color: rgb(170, 170, 170);
+    color: black;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -18,7 +18,7 @@
 }
 
 .blog-post-title{
-    color: white;
+    color: black;
     margin-bottom: 2rem;
 }
 
