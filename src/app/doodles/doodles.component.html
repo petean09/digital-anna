@@ -19,7 +19,7 @@
                                 <div *ngIf="selectWork.sys.contentType.sys.id == 'selectWork'">
             
                                     <li class="showcase-item">
-                                        <a [routerLink]="['select-work/', selectWork.sys.id]" class="showcase-link">
+                                        <a [routerLink]="[selectWork.sys.id]" class="showcase-link">
                                             <div class="showcase-caption">
                                                 <h3 class="showcase-title">{{ selectWork.fields.title }}</h3>
                                                 <p class="category">{{ selectWork.fields.subTitle }}</p>

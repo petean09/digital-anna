@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: { animation: '2'} },
   { path: 'cyber', component: BlogComponent, data: { animation: '3'} },
   { path: 'creative', component: DoodlesComponent, data: { animation: '4'}},
-  { path: 'blog/:id', component: BlogPostComponent},
-  { path: 'select-work/:id', component: ProjectComponent}
+  { path: 'cyber/:id', component: BlogPostComponent},
+  { path: 'creative/:id', component: ProjectComponent}
 ];
 
 @NgModule({
