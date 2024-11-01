@@ -50,6 +50,24 @@
     margin: 0 auto;
 }
 
+/* info section start */
+.info-title-container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.info-title{
+  font-size: 4em;
+  /* text-align: center; */
+}
+
+.info-list-container{
+    padding-top: 2em;
+    border-top: solid .5px rgb(170, 170, 170);
+    font-weight: 700;
+}
+/* info section end */
+
 /* .blog-posts-container{
     padding-left: 5%;
     padding-right: 5%;

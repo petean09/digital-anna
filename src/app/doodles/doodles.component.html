@@ -2,11 +2,41 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h1 class="doodle-title">Doodles.</h1>
+                <h1 class="doodle-title">Creative.</h1>
             </div>
         </div>
+        <!-- Projects -->
+        <div class="row">
+            <div class="col">
+                <div class="containerMain">
+                    <div class="project-title-container">
+                        <h1 class="project-title">Projects</h1>
+                    </div>
+                    <main *ngIf="selectWorks$ | async as selectWorks">
+                        <ul class="showcase sibling-fade">
+                            <div class="inline-block-container" *ngFor="let selectWork of selectWorks.items">
+                                
+                                <div *ngIf="selectWork.sys.contentType.sys.id == 'selectWork'">
+            
+                                    <li class="showcase-item">
+                                        <a [routerLink]="['select-work/', selectWork.sys.id]" class="showcase-link">
+                                            <div class="showcase-caption">
+                                                <h3 class="showcase-title">{{ selectWork.fields.title }}</h3>
+                                                <p class="category">{{ selectWork.fields.subTitle }}</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                            
+                    </main>
+                </div>
+            </div>
+        </div>
+        <!-- End select projects -->
         <div class="disclaimer">
-            <span>Sketches I drew. Some are copy cats of cool things found on Pinterest and some are my own.</span>
+            <h1 class="project-title">Doodles</h1>
         </div>
          <div class="imgContainer">
             <main *ngIf="doodles$ | async as doodles">

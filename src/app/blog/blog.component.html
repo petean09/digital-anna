@@ -2,20 +2,76 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="blog-title">Writing.</h1>
+                <h1 class="blog-title">Cyber.</h1>
             </div>
             <div class="col-md-6">
                 <div class="subscribe-container">
                     <h5 class="subscribe-text">Join the 
                         <a class="word" href="https://privacypost.beehiiv.com/">Privacy Post community</a>
                          &#8212; posts directly to your inbox. 
-                         I send out a weekly newsletter on privacy news, knowledge, and technology happenings.</h5>
+                         I send out newsletters on privacy news, knowledge, and technology happenings.</h5>
                     <iframe class="subscribe" src="https://embeds.beehiiv.com/9e378091-b5bb-4506-9666-d7d11468866f?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>            
                 </div>
             </div>
         </div>
+  
+             <!-- Info section -->
+        <div class="row blog-post-container ">
+            <div class="col-lg-4">
+                <div class="info-title-container">
+                    <h1 class="info-title">History</h1>
+                </div>
+                <div class="info-list-container">
+                    <span>Deloitte (2021 - Present)</span><br>
+                    <i>Cyber and Strategic Risk Senior Consultant</i>
+                    <br><br>
+                    <span>Preventice Solutions (Summer of 2019)</span><br>
+                    <i>Software Engineer</i>
+                    <br><br>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="info-title-container">
+                    <h1 class="info-title">Skills</h1>
+                </div>
+                <div class="info-list-container">
+                    <p>Information Security</p>
+                    <p>Application Security</p>
+                    <p>Data Privacy, GDPR</p>
+                    <p>Risk and Compliance</p>
+                    <p>Python, HTML, CSS, Javascript, C++</p>
+                    <p>NodeJS, Express</p>
+                    <p>Angular, React</p>
+                    <p>SQL, MongoDB, AWS, Azure, APIs</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="info-title-container">
+                    <h1 class="info-title">Certifications</h1>
+                </div>
+                <div class="info-list-container">
+                    <span>Certified Information Privacy Professional/Europe</span><br>
+                    <i>Since 2023</i>
+                    <br><br>
+                    <span>Emerging Challenges in AI, Tech, & Privacy</span><br>
+                    <i>Since 2024</i>
+                    <br><br>
+                    <span>OneTrust Consent and Preference Management Expert</span><br>
+                    <i>Since 2024</i>
+                    <br><br>
+                    <span>OneTrust Certified Priavcy Professional</span><br>
+                    <i>Since 2023</i>
+                    <br><br>
+                    <span>AWS Certified Cloud Practioner</span><br>
+                    <i>Since 2021</i>
+                    <br><br>
+                </div>
+            </div>
+            <!-- End info section -->
+        </div>
         <div class="row">
-
+            <h1 class="info-title"> I  write about data privacy because I believe this topic is essential for everyone to know 
+                in today's digital space.</h1>
             <!-- Blog posts start -->
             <!-- Used to display the obsevable (blogPosts$) of the blog posts coming from blog component -->
             <main *ngIf="blogPosts$ | async as blogPosts">

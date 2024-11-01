@@ -12,8 +12,8 @@ const routes: Routes = [
   { path: 'app', component: AppComponent},
   { path: '', component: HomeComponent, data: { animation: '1'} },
   { path: 'about', component: AboutComponent, data: { animation: '2'} },
-  { path: 'blog', component: BlogComponent, data: { animation: '3'} },
-  { path: 'doodles', component: DoodlesComponent, data: { animation: '4'}},
+  { path: 'cyber', component: BlogComponent, data: { animation: '3'} },
+  { path: 'creative', component: DoodlesComponent, data: { animation: '4'}},
   { path: 'blog/:id', component: BlogPostComponent},
   { path: 'select-work/:id', component: ProjectComponent}
 ];

@@ -14,10 +14,13 @@ export class DoodlesComponent implements OnInit {
 
   // creates the variable that will hold the observable from contentfulService
   doodles$ : Observable<any> | undefined;
+  selectWorks$: Observable<any> | undefined;
 
   ngOnInit(): void {
-    // retrieves all the blog posts from the contentful service. This is an observable
+    // retrieves all the blog posts and select works from the contentful service. This is an observable
     this.doodles$ = this.contentfulService.getAllEntries();
+    this.selectWorks$ = this.contentfulService.getAllEntries();
+
   }
 
 }

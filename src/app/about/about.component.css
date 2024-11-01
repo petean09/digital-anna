@@ -4,6 +4,7 @@
     /* font-family: 'Roboto Flex', sans-serif; */
     padding-top: 6rem;
     padding-bottom: 4rem;
+    color: rgb(121, 119, 119);
 }
 
 .about-title{
@@ -15,10 +16,12 @@
     font-family: 'Roboto Flex', sans-serif;
     letter-spacing: 6px;
     font-weight: bold;
+    color: black;
 }
 
 .description-titles{
     color: black;
+    padding-bottom: 4rem;
 }
 
 .about-section {
@@ -91,21 +94,6 @@
 /* End picture section */
 
 
- /* Info section */
-.info-title-container{
-    padding-top: 6em;
-    padding-bottom: 2em;
-}
-
-.info-title{
-  font-size: 4em;
-  /* text-align: center; */
-}
-
-.info-list-container{
-    padding-top: 2em;
-    border-top: solid .5px rgb(170, 170, 170);
-    font-weight: 700;
-}
+ 
   
  

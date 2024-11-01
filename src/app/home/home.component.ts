@@ -11,10 +11,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private contentfulService: ContentfulService) { }
 
-  selectWorks$: Observable<any> | undefined;
-
   ngOnInit(): void {
-      // retrieves all the blog posts from the contentful service. This is an observable
-      this.selectWorks$ = this.contentfulService.getAllEntries();
   }
 }

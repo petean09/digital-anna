@@ -19,9 +19,12 @@
                     If you like what you see, don't hestitate to reach out, it's always great meeting 
                     new people.
                     <br><br>
-                    Explore my site to find my <span routerLink="/doodles" class="word">doodles</span> and read my <span routerLink="/blog" class="word">writing.</span> 
-                    I mostly write about data privacy as I believe this topic is essential for everyone to know 
-                    in today's digital space.
+                    Explore my site to learn more about 
+                    <span routerLink="/about" class="word">ME</span>
+                    , find my <span routerLink="/creative" class="word">creative works</span> 
+                    and read my <span routerLink="/cyber" class="word">Privacy Blog.</span> 
+
+        
                     
                     <!-- Additionally, I introduce resources and ideas to unabashedly teach women about taking 
                     up space in your own way when working in a male dominated field and the realities
@@ -39,35 +42,6 @@
             </div>
         </div>
        
-    <!-- Projects -->
-        <div class="row">
-            <div class="col">
-                <div class="containerMain">
-                    <div class="project-title-container">
-                        <h1 class="project-title">Select Work</h1>
-                    </div>
-                    <main *ngIf="selectWorks$ | async as selectWorks">
-                        <ul class="showcase sibling-fade">
-                            <div class="inline-block-container" *ngFor="let selectWork of selectWorks.items">
-                                
-                                <div *ngIf="selectWork.sys.contentType.sys.id == 'selectWork'">
-            
-                                    <li class="showcase-item">
-                                        <a [routerLink]="['select-work/', selectWork.sys.id]" class="showcase-link">
-                                            <div class="showcase-caption">
-                                                <h3 class="showcase-title">{{ selectWork.fields.title }}</h3>
-                                                <p class="category">{{ selectWork.fields.subTitle }}</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </div>
-                            </div>
-                        </ul>
-                            
-                    </main>
-                </div>
-            </div>
-        </div>
-        <!-- End select projects -->
+    
     </div>
 </div>
