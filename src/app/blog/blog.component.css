@@ -16,6 +16,20 @@
     font-weight: bold;
 }
 
+.cyber-img-container {
+    height: fit-content;
+}
+
+.cyber-img {
+    object-fit: contain;
+    /* border-radius: 50%; */
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .subscribe-container{
     padding-top: 5em;
     text-align: center;
@@ -73,10 +87,18 @@
     padding-right: 5%;
 } */
 
+.b-title{
+    font-size: 4em;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
 .blog-post-container{
     padding-bottom: 3rem;
     padding-top: 3rem;
     border-top: solid black 1px;
+    border-bottom: solid black 1px;
+
     /* border-right: solid white 1px; */
 }
 

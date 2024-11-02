@@ -2,7 +2,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="blog-title">Cyber.</h1>
+                <!-- <h1 class="blog-title">Cyber.</h1> -->
+                <div class="cyber-img-container">
+                    <img class="cyber-img" src="../../assets/cyber-page/cyber.jpg" alt="cyber title">
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="subscribe-container">
@@ -70,8 +73,14 @@
             <!-- End info section -->
         </div>
         <div class="row">
-            <h1 class="info-title"> I  write about data privacy because I believe this topic is essential for everyone to know 
-                in today's digital space.</h1>
+            <h1 class="b-title"> 
+                PRIVACY POST BLOG
+                <br><br>
+                I  write about data privacy because I believe this topic is essential for everyone to know 
+                in today's digital space.
+                <br><br>
+                Check out my writing below.
+            </h1>
             <!-- Blog posts start -->
             <!-- Used to display the obsevable (blogPosts$) of the blog posts coming from blog component -->
             <main *ngIf="blogPosts$ | async as blogPosts">

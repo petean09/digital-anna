@@ -21,7 +21,7 @@
 
 .description-titles{
     color: black;
-    padding-bottom: 4rem;
+    /* padding-bottom: 2rem; */
 }
 
 .about-section {
@@ -31,6 +31,34 @@
     padding-top: 4rem;
     font-size: 20px;
     border-top: solid black 1px;
+}
+
+.about-img-container {
+    height: fit-content;
+}
+
+.about-img {
+    object-fit: contain;
+    /* border-radius: 50%; */
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.brain-img-container {
+    height: fit-content;
+}
+
+.brain-img {
+    object-fit: contain;
+    /* border-radius: 50%; */
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 @media (max-width: 960px) { 

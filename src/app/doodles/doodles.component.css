@@ -17,6 +17,20 @@
     font-weight: bold;
 }
 
+.creative-img-container {
+    height: fit-content;
+}
+
+.creative-img {
+    object-fit: contain;
+    /* border-radius: 50%; */
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /* Select creation section */
 .project-title-container{
     padding-bottom: 2em;
